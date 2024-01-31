@@ -34,10 +34,21 @@
                     android:layout_height="50dp"
                     android:src="@drawable/ss_logo"/>
             </androidx.cardview.widget.CardView>
-            <com.google.android.material.search.SearchBar
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:hint="Search your collegues"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search your colleagues" />
+            </com.google.android.material.textfield.TextInputLayout>
+
         </LinearLayout>
 
         <ScrollView
@@ -63,6 +74,7 @@
                             android:layout_height="wrap_content"
                             app:cardCornerRadius="100dp">
                             <ImageView
+                                android:id="@+id/apply_leave_image"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:src="@drawable/apply_leave"/>

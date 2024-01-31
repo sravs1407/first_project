@@ -12,9 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Keka"
         tools:targetApi="31">
-        <activity
-            android:name=".header"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
